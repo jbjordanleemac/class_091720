@@ -1,0 +1,74 @@
+#!/usr/bin/python
+
+class day():
+  weather = 'Blue Sky'
+  temperature = " 80\'s "
+
+  def __init__(self, whatday, whattime, dowhat):
+    self.whatday = whatday
+    self.whattime = whattime
+    self.dowhat = dowhat
+
+  def feeling(self, mood):
+    print(' Day like ' + self.whatday + ' at ' + self.whattime + ' working on ' + self.dowhat + ' will let me feel ' + 
+mood + ' which is awesome ')
+
+d1 = day('Thurs', '4:30 ', 'Enjoy Python Coding')
+print(d1.temperature)
+
+print(d1.whattime)
+
+d1.feeling(' use my brain ')
+
+class day2(day):
+  pass
+
+d2 = day2('Fri', '5:30', ' Stretch Time !!!')
+d2.feeling('Energetic')
+
+thisdict = {
+  "One": "Mon",
+  "Two": "Tue",
+  "Three": "Wed"
+}
+
+for a in thisdict:
+  print(a)
+
+thisdict['Four'] = 'Thurs'
+print(thisdict)
+
+favorite = 'PythonCoding'
+
+print(favorite[0])
+
+# new way to print
+print('{} is really exciting'.format(favorite))
+
+# old way to print
+print('%s is really exciting' % favorite)
+
+first = ['a', 'b', 'c']
+second = ['d', 'e', 'f']
+
+for b in second:
+  first.append(b)
+
+print(first)
+
+grade = 6
+
+print('Attending ' + str(grade) + ' grade now ')
+
+while grade < 12:
+  grade += 1
+  print('Will attend ' + str(grade) + ' Grade Next ')
+
+print('Finish aboves and go to college !!! ')
+
+cleanup = 'yes all cleanup'
+
+try:
+  print(cleanup)
+except:
+  print('cleanup is NOT defined')
